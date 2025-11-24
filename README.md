@@ -8,12 +8,11 @@
 
 
 
-[Shuai Zhang](https://github.com/Shuaizhang7)<sup>\*</sup>, Bao Tang<sup>\*</sup>, Siyuan Yu<sup>\*</sup>, Yueting Zhu, [Jingfeng Yao](https://github.com/JingfengYao),
-Ya Zou, Shanglin Yuan, Li Yu, [Wenyu Liu](http://eic.hust.edu.cn/professor/liuwenyu), [Xinggang Wang](https://xwcv.github.io/index.htm)<sup>📧</sup>
+[Shuai Zhang](https://github.com/Shuaizhang7)<sup>\*</sup>, Bao Tang<sup>\*</sup>, Siyuan Yu<sup>\*</sup>, Yueting Zhu, [Jingfeng Yao](https://github.com/JingfengYao),<br>Ya Zou, Shanglin Yuan, Li Yu, [Wenyu Liu](http://eic.hust.edu.cn/professor/liuwenyu), [Xinggang Wang](https://xwcv.github.io/index.htm)<sup>📧</sup>
 
 Huazhong University of Science and Technology (HUST) 
 
-(\* equal contribution, 📧 corresponding author: xgwang@hust.edu.cn)
+(\* equal contribution, 📧 corresponding author)
 
 [![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2508.09136)
 [![checkpoints](https://img.shields.io/badge/HuggingFace-🤗-green)](https://huggingface.co/hustvl/Turbo-VAED)
