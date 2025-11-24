@@ -25,7 +25,7 @@ Huazhong University of Science and Technology (HUST)
 
 ## 📄 Introduction
 <div align="center">
-<img src="./asset/t1_4.pdf">
+<img src="./asset/fig1.png">
 </div>
 Recently, video generation has witnessed rapid advancements, drawing increasing attention to image-to-video (I2V) synthesis on mobile devices. However, the substantial computational complexity and slow generation speed of diffusion models pose significant challenges for real-time, high-resolution video generation on resource-constrained mobile devices. In this work, we propose MobileI2V, a 270M lightweight diffusion model for real-time image-to-video generation on mobile devices. The core lies in: (1) We analyzed the performance of linear attention modules and softmax attention modules on mobile devices, and proposed a linear hybrid architecture denoiser that balances generation efficiency and quality. (2) We design a time-step distillation strategy that compresses the I2V sampling steps from more than 20 to only two without significant quality loss, resulting in a 10-fold increase in generation speed. (3) We apply mobile-specific attention optimizations that yield 2$\times$ speed-up for attention operations during on-device inference. MobileI2V enables, for the first time, fast 720p image-to-video generation on mobile devices, with quality comparable to existing models. Under one-step conditions, the generation speed of each frame of 720p video is less than 100 ms. Our code will be publicly released.
 
