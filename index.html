@@ -48,6 +48,14 @@
 <body>
 
 
+  <style>
+    .model-figure {
+        width: 20%;
+        margin: 0 auto;
+        display: block;
+    }
+  </style>
+
   <section>
     <div>
         <img src="static/images/logo3.png" alt="logo" class="model-figure">
@@ -162,6 +170,18 @@
     }
 </style>
 <br>
+
+
+
+<section>
+  <div>
+      <img src="static/images/fig1.png" alt="Model Structure" class="model-figure" style="max-width:600px; width:100%; height:auto;">
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <p style="margin-top: 20px; text-align: center;">Compared with SVD-XT (1.5B), our 5.55x smaller MobileI2V (0.27B) achieves similar generation quality, using only 2.24s on mobile and running 199x faster on an A100 GPU</p>
+  </div>
+</section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -212,22 +232,6 @@
 
 
 
-<style>
-    .model-figure {
-        width: 50%;
-        margin: 0 auto;
-        display: block;
-    }
-</style>
-
-<section>
-  <div>
-      <img src="static/images/LENS.png" alt="Model Structure" class="model-figure">
-  </div>
-  <div class="columns is-centered has-text-centered">
-    <p style="margin-top: 20px; text-align: center;">An Overview of LENS framework</p>
-  </div>
-</section>
 
 <br>
 <br>
@@ -258,81 +262,60 @@
       <div class="carousel-extra-padding">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-snail_shell">
-            <video class="carousel-video" id="snail_shell" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo1.mp4" type="video/mp4">
+            <video class="carousel-video" id="snail_shell" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-sail">
-            <video class="carousel-video" id="sail" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo2.mp4" type="video/mp4">
+            <video class="carousel-video" id="sail" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-antlers">
-            <video class="carousel-video" id="antlers" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo4.mp4" type="video/mp4">
+            <video class="carousel-video" id="antlers" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-dashboard">
-            <video class="carousel-video" id="dashboard" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo5.mp4" type="video/mp4">
+            <video class="carousel-video" id="dashboard" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-trees">
-            <video class="carousel-video" id="trees" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo6.mp4" type="video/mp4">
+            <video class="carousel-video" id="trees" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-skis">
-            <video class="carousel-video" id="skis" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo7.mp4" type="video/mp4">
+            <video class="carousel-video" id="skis" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-ferrari">
-            <video class="carousel-video" id="ferrari" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo9.mp4" type="video/mp4">
+            <video class="carousel-video" id="ferrari" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-mario">
-            <video class="carousel-video" id="mario" controls muted loop playsinline height="100%" data-src="./static/videos/good/demo13.mp4" type="video/mp4">
+            <video class="carousel-video" id="mario" controls muted loop playsinline height="100%" data-src="./static/videos/good/video2.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
     </div>
-  <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">ReasonSeg Reasoning Demos</p>
+  <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Generation Demos</p>
   </div>
 </section>
 <br>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="image-column" style="margin-top: 20px;">
-        <div class="image-item" style="text-align: center; margin-bottom: 20px;">
-          <img src="./static/images/spatial_understanding_example.png" alt="Demo 1" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="image-item" style="text-align: center; margin-bottom: 20px;">
-          <img src="./static/images/multi_object_disambiguation.png" alt="Demo 2" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="image-item" style="text-align: center; margin-bottom: 20px;">
-          <img src="./static/images/complex_referring_expression.png" alt="Demo 3" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="image-item" style="text-align: center; margin-bottom: 20px;">
-          <img src="./static/images/misguided_context.png" alt="Demo 4" style="width: 100%; border-radius: 8px;">
-        </div>
-      </div>
-    </div>
-  <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Referring Expression Segmentation</p>
+
+
+<br>
+<br>
+<br>
+
+
+
+<section style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh;">
+  <div style="max-width:300px; width:100%;">
+    <video muted playsinline autoplay loop preload="auto" style="width:100%; height:auto; display:block;">
+      <source src="static/videos/good/mobileUI.mp4" type="video/mp4">
+    </video>
   </div>
-</section>
-
-
-
-<br>
-<br>
-<br>
-
-
-
-<section>
-      <div>
-          <video muted playsinline autoplay loop poster="static/images/bad1.webp" preload="auto" class="click-fullscreen">
-              <source src="static/videos/good/mobileUI.mp4" type="video/mp4">
-          </video>
-      </div>
+  <h2 style="margin:12px 0 0 0; font-size:1.2rem;">Mobile UI Demo</h2>
 </section>
 
 <br>

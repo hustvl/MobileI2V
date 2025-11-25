@@ -1,4 +1,4 @@
-# [AAAI 2026 Oral] LENS: Learning to Segment Anything with Unified Reinforced Reasoning
+# MobileI2V: Fast and High-Resolution Image-to-Video on Mobile Devices
 
 This repository contains source code for the [LENS website](https://hustvl.github.io/LENS).
 
