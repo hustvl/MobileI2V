@@ -48,6 +48,8 @@ Compared with SVD-XT (1.5B), our 5.55× smaller MobileI2V (0.27B) achieves simil
 
 </div>
 
+
+
 ## 🎯 How to Use
 
 ### Installation
@@ -87,9 +89,19 @@ CUDA_VISIBLE_DEVICES=0 python scripts/inference_i2v.py \
 ```
 
 
+## 🎯 Mobile Demo
+We designed the mobile UI and deployed the model, as shown in the video below:
+<div align="center">
+  <img src="./asset/mobileUI.gif" width="25.5%">
+
+</div>
+
 ## ❤️ Acknowledgements
 
 Our MobileI2V codes are mainly built with [SANA](https://github.com/NVlabs/Sana) and [LTX-Video](https://github.com/Lightricks/LTX-Video). Thanks for all these great works.
+
+
+
 
 ## 📝 Citation
 
