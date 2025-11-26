@@ -92,7 +92,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/inference_i2v.py \
 ## 🎯 Mobile Demo
 We designed the mobile UI and deployed the model, as shown in the video below:
 <div align="center">
-  <img src="./asset/mobileUI.gif" width="25.5%">
+  <img src="./asset/videos/mobileUI.gif" width="25.5%">
 
 </div>
 
