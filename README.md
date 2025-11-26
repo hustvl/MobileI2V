@@ -14,9 +14,9 @@ Huazhong University of Science and Technology (HUST)
 
 (\* equal contribution, 📧 corresponding author)
 
-[![Project](https://github.com/hustvl/MobileI2V)](https://arxiv.org/abs/2508.09136)
-[![arxiv paper](https://github.com/hustvl/MobileI2V)](https://arxiv.org/abs/2508.09136)
-[![checkpoints](https://github.com/hustvl/MobileI2V)](https://huggingface.co/hustvl/Turbo-VAED)
+[![Project](https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages)](https://github.com/hustvl/MobileI2V)
+[![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://github.com/hustvl/MobileI2V)
+[![checkpoints](https://img.shields.io/badge/HuggingFace-🤗-green)](https://github.com/hustvl/MobileI2V)
 
 </div>
 
