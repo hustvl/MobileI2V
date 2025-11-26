@@ -14,7 +14,7 @@ Huazhong University of Science and Technology (HUST)
 
 (\* equal contribution, 📧 corresponding author)
 
-[![Project](https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages)](https://github.com/hustvl/MobileI2V)
+[![Project](https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages)](https://hustvl.github.io/MobileI2V/)
 [![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://github.com/hustvl/MobileI2V)
 [![checkpoints](https://img.shields.io/badge/HuggingFace-🤗-green)](https://github.com/hustvl/MobileI2V)
 
