@@ -1,6 +1,6 @@
 # MobileI2V: Fast and High-Resolution Image-to-Video on Mobile Devices
 
-This repository contains source code for the [LENS website](https://hustvl.github.io/LENS).
+This repository contains source code for the [MobileI2V website](https://github.com/hustvl/MobileI2V).
 
 If you find our work useful please cite:
 <pre>
