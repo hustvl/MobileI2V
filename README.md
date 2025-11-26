@@ -4,14 +4,7 @@ This repository contains source code for the [LENS website](https://hustvl.githu
 
 If you find our work useful please cite:
 <pre>
-@misc{zhu2025lens,
-    title={LENS: Learning to Segment Anything with Unified Reinforced Reasoning},
-    author={Lianghui Zhu and Bin Ouyang and Yuxuan Zhang and Tianheng Cheng and Rui Hu and Haocheng Shen and Longjin Ran and Xiaoxin Chen and Li Yu and Wenyu Liu and Xinggang Wang},
-    year={2025},
-    eprint={2508.14153},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
-}
+
 </pre>
 
 The website template is borrowed from [Nerfies](https://nerfies.github.io/) and [OmniMotion](https://omnimotion.github.io//).
