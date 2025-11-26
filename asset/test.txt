@@ -1,0 +1,4 @@
+/data/shuaizhang/Sana/test_video/_JnC_Zj_P7s_22_0to190_extracted.mp4
+/data/shuaizhang/Sana/test_video/_kcgN9-WWaw_8_0to142_extracted.mp4
+/data/shuaizhang/Sana/test_video/_cLXy9sw4KM_7_0to136_extracted.mp4
+/data/shuaizhang/MobileI2V/1688453333865029.png

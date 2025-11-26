@@ -1,0 +1,113 @@
+data:
+  data_path: [/data/shuaizhang/MobileI2V/data.csv]
+  image_height: 720
+  image_width: 1280
+  transform_name: resize_crop
+  type: VideoTextDataset
+  num_frames: 17
+  frame_interval: 1
+# model config
+model:
+  model: Mobiledit_300M_P1_D16
+  image_height: 720
+  image_width: 1280
+  mixed_precision: fp16
+  fp32_attention: true
+  load_from: /data/shuaizhang/MobileI2V/model/hybrid_371.pth
+  resume_from:
+  aspect_ratio_type: ASPECT_RATIO_512
+  multi_scale: false
+  attn_type: linear
+  linear_head_dim: 32
+  ffn_type: glumbconv
+  mlp_acts:
+    - silu
+    - silu
+    - null
+  mlp_ratio: 2.5
+  use_pe: false
+  qk_norm: true
+  class_dropout_prob: 0.1
+# VAE setting
+vae:
+  vae_type: video-vae
+  vae_pretrained: /data/shuaizhang/Sana/model/video-vae
+  scale_factor: 0.41407
+  vae_latent_dim: 128
+  vae_downsample_rate: 32
+  sample_posterior: true
+# text encoder
+text_encoder:
+  text_encoder_name: /data/shuaizhang/Sana/model/Qwen2-0.5B
+  y_norm: true
+  y_norm_scale_factor: 0.01
+  model_max_length: 300
+  caption_channels: 896
+  # CHI
+  # chi_prompt:
+  #   - 'Given a user prompt, generate an "Enhanced prompt" that provides detailed visual descriptions suitable for image generation. Evaluate the level of detail in the user prompt:'
+  #   - '- If the prompt is simple, focus on adding specifics about colors, shapes, sizes, textures, and spatial relationships to create vivid and concrete scenes.'
+  #   - '- If the prompt is already detailed, refine and enhance the existing details slightly without overcomplicating.'
+  #   - 'Here are examples of how to transform or refine prompts:'
+  #   - '- User Prompt: A cat sleeping -> Enhanced: A small, fluffy white cat curled up in a round shape, sleeping peacefully on a warm sunny windowsill, surrounded by pots of blooming red flowers.'
+  #   - '- User Prompt: A busy city street -> Enhanced: A bustling city street scene at dusk, featuring glowing street lamps, a diverse crowd of people in colorful clothing, and a double-decker bus passing by towering glass skyscrapers.'
+  #   - 'Please generate only the enhanced description for the prompt below and avoid including any additional commentary or evaluations:'
+  #   - 'User Prompt: '
+# Sana schedule Flow
+scheduler:
+  train_sampling_steps: 1000
+  predict_v: true
+  noise_schedule: linear_flow
+  pred_sigma: false
+  flow_shift: 1.0
+  # logit-normal timestep
+  weighting_scheme: logit_normal
+  logit_mean: 0.0
+  logit_std: 1.0
+  #vis_sampler: flow_dpm-solver
+  vis_sampler: flow_euler
+# training setting
+train:
+  num_workers: 4
+  seed: 1
+  train_batch_size: 1
+  num_epochs: 1000
+  gradient_accumulation_steps: 1
+  grad_checkpointing: true
+  gradient_clip: 1.0
+  optimizer:
+    betas:
+      - 0.9
+      - 0.999
+      - 0.9999
+    eps:
+      - 1.0e-30
+      - 1.0e-16
+    # lr: 0.0001
+    lr: 0.0001
+    type: CAMEWrapper
+    weight_decay: 0.1
+  lr_schedule: constant
+  lr_schedule_args:
+    num_warmup_steps: 2000
+  local_save_vis: true # if save log image locally
+  visualize: true
+  eval_sampling_steps: 3330
+  log_interval: 50
+  save_model_epochs: 500
+  save_model_steps: 1000
+  work_dir: output/debug
+  online_metric: false
+  eval_metric_step: 100000
+  online_metric_dir: metric_helper
+  validation_prompts:
+    - The video features a close-up of a man with a weathered and aged appearance. His skin is darkened, possibly due to dirt or a natural skin tone, and he has a full beard and mustache. His eyes are closed, and he appears to be in a state of rest or perhaps exhaustion. The lighting in the scene is dim, with a warm glow that suggests an indoor setting, possibly a room with a low ceiling. The man's expression is one of tranquility or perhaps deep thought. The style of the video is realistic, with a focus on the man's face and the subtle details of his surroundings. The overall mood of the video is contemplative and introspective.
+    - The video features a young man with short brown hair, who is looking to the side with a slight smile on his face. He is wearing a black jacket and a blue shirt. The background is blurred, but it appears to be an outdoor setting with a building and a tree. The style of the video is casual and candid, capturing a moment in the man's life. The focus is on the man's face and expression, with the background serving as a simple backdrop. The lighting is natural, suggesting that the video was taken during the day.
+    - The video features a young woman with long brown hair, who is smiling and looking to the side. The style of the video is a close-up shot, focusing on the woman's face and upper body. The lighting is soft and warm, highlighting the woman's features and creating a pleasant atmosphere. The background is blurred, but it appears to be an indoor setting with curtains and a window. The woman's expression is relaxed and content, suggesting a positive and uplifting mood. The overall style of the video is simple and elegant, with a focus on the woman's beauty and the intimate setting.
+    - The video features a woman with blonde hair, who appears to be in a state of deep thought or sadness. She is wearing a black blazer and has her eyes closed, suggesting she is lost in her thoughts or possibly crying. The background is blurred, but it appears to be an indoor setting with a lamp and a couch, indicating that the scene might be taking place in a living room or a similar space. The overall style of the video is realistic and it seems to capture a candid moment in the woman's life.
+    - The video features a man in a tuxedo, smiling and looking to the side. The man is well-dressed, wearing a black suit with a white shirt and a black bow tie. He has short, light-colored hair and appears to be in a good mood. The background is blurred, but it seems to be an indoor setting, possibly a room with a wooden floor and walls. The lighting is soft and warm, suggesting an indoor environment. The man's expression and attire suggest a formal or celebratory occasion.
+    - This person is talking.
+    - This person is talking1.
+    - This person is talking2.
+    - This person is talking5.
+    - This person is talking10.
