@@ -31,20 +31,20 @@ Compared with SVD-XT (1.5B), our 5.55× smaller MobileI2V (0.27B) achieves simil
 
 ## 🎯 Demo
 
-#### (1) 720P Video
+#### (1) 1280×720×17 Image to Video
 <div align="center">
   <img src="./asset/videos/video1.gif" width="24.5%">
-  <img src="./assets/horse.gif" width="24.5%">
-  <video src="./assets/videos/video2.mp4" width="24.5%">
-  <img src="./assets/standup.gif" width="24.5%">
+  <img src="./asset/videos/video2.gif" width="24.5%">
+  <img src="./asset/videos/video3.gif" width="24.5%">
+  <img src="./asset/videos/video4.gif" width="24.5%">
 </div>
 
-#### (2) 960×960 Video
+#### (2) 960×960×17 Image to Video
 <div align="center">
-  <img src="./assets/bouncingballs.gif" width="24.5%">
-  <img src="./assets/horse.gif" width="24.5%">
-  <img src="./assets/jumpingjacks.gif" width="24.5%">
-  <img src="./assets/standup.gif" width="24.5%">
+  <img src="./asset/videos/video5.gif" width="18.5%">
+  <img src="./asset/videos/video6.gif" width="18.5%">
+  <img src="./asset/videos/video7.gif" width="18.5%">
+  <img src="./asset/videos/video8.gif" width="18.5%">
 
 </div>
 
