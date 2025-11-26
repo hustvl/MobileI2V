@@ -108,22 +108,22 @@ def log_validation(accelerator, config, model, logger, step, device, vae=None, i
         for prompt in validation_prompts:
             print(prompt)
             if prompt == "The video features a man in a tuxedo, smiling and looking to the side. The man is well-dressed, wearing a black suit with a white shirt and a black bow tie. He has short, light-colored hair and appears to be in a good mood. The background is blurred, but it seems to be an indoor setting, possibly a room with a wooden floor and walls. The lighting is soft and warm, suggesting an indoor environment. The man's expression and attire suggest a formal or celebratory occasion.":
-                ref_image = Image.open("/data/shuaizhang/Sana/1688453333865029.png").convert("RGB")
+                ref_image = Image.open("/data/shuaizhang/MobileI2V/test_image.png").convert("RGB")
                 flow_score = torch.FloatTensor([1.0]).to(accelerator.device)
             elif prompt == "This person is talking1.":
-                ref_image = Image.open("/data/shuaizhang/Sana/1688453333865029.png").convert("RGB")
+                ref_image = Image.open("/data/shuaizhang/MobileI2V/test_image.png").convert("RGB")
                 flow_score = torch.FloatTensor([1.0]).to(accelerator.device)
             elif prompt == "This person is talking2.":
-                ref_image = Image.open("/data/shuaizhang/Sana/1688453333865029.png").convert("RGB")
+                ref_image = Image.open("/data/shuaizhang/MobileI2V/test_image.png").convert("RGB")
                 flow_score = torch.FloatTensor([2.0]).to(accelerator.device)
             elif prompt == "This person is talking5.":
-                ref_image = Image.open("/data/shuaizhang/Sana/1688453333865029.png").convert("RGB")
+                ref_image = Image.open("/data/shuaizhang/MobileI2V/test_image.png").convert("RGB")
                 flow_score = torch.FloatTensor([5.0]).to(accelerator.device)
             elif prompt == "This person is talking10.":
-                ref_image = Image.open("/data/shuaizhang/Sana/1688453333865029.png").convert("RGB")
+                ref_image = Image.open("/data/shuaizhang/MobileI2V/test_image.png").convert("RGB")
                 flow_score = torch.FloatTensor([10.0]).to(accelerator.device)
             else:
-                ref_image = Image.open("/data/shuaizhang/Sana/1688453333865029.png").convert("RGB")
+                ref_image = Image.open("/data/shuaizhang/MobileI2V/test_image.png").convert("RGB")
                 flow_score = torch.FloatTensor([5.0]).to(accelerator.device)
             transform = transforms.Compose([
                  transforms.ToTensor(),
