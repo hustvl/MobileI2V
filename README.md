@@ -15,8 +15,8 @@ Huazhong University of Science and Technology (HUST)
 (\* equal contribution, 📧 corresponding author)
 
 [![Project](https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages)](https://hustvl.github.io/MobileI2V/)
-[![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://github.com/hustvl/MobileI2V)
-[![checkpoints](https://img.shields.io/badge/HuggingFace-🤗-green)](https://github.com/hustvl/MobileI2V)
+[![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2511.21475)
+[![checkpoints](https://img.shields.io/badge/HuggingFace-🤗-green)](https://arxiv.org/abs/2511.21475)
 
 </div>
 
@@ -108,6 +108,14 @@ Our MobileI2V codes are mainly built with [SANA](https://github.com/NVlabs/Sana)
 If you find MobileI2V useful, please consider giving us a star 🌟 and citing it as follows:
 
 ```
-
+@misc{MobileI2V,
+      title={MobileI2V: Fast and High-Resolution Image-to-Video on Mobile Devices}, 
+      author={Shuai Zhang and Bao Tang and Siyuan Yu and Yueting Zhu and Jingfeng Yao and Ya Zou and Shanglin Yuan and Li Yu and Wenyu Liu and Xinggang Wang},
+      year={2025},
+      eprint={2511.21475},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.21475}, 
+}
 
 ```
