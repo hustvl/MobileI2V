@@ -4,7 +4,15 @@ This repository contains source code for the [MobileI2V website](https://github.
 
 If you find our work useful please cite:
 <pre>
-
+@misc{MobileI2V,
+      title={MobileI2V: Fast and High-Resolution Image-to-Video on Mobile Devices}, 
+      author={Shuai Zhang and Bao Tang and Siyuan Yu and Yueting Zhu and Jingfeng Yao and Ya Zou and Shanglin Yuan and Li Yu and Wenyu Liu and Xinggang Wang},
+      year={2025},
+      eprint={2511.21475},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.21475}, 
+}
 </pre>
 
 The website template is borrowed from [Nerfies](https://nerfies.github.io/) and [OmniMotion](https://omnimotion.github.io//).
