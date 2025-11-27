@@ -21,7 +21,7 @@ Huazhong University of Science and Technology (HUST)
 </div>
 
 ## 📰 News
-- **[2025.11.27]** We have released our paper on [arXiv](https://arxiv.org/abs/2508.09136).
+- **[2025.11.27]** We have released our paper on [arXiv](https://arxiv.org/abs/2511.21475).
 
 ## 📄 Introduction
 <div align="center">
