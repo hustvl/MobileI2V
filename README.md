@@ -59,7 +59,7 @@ You can install the required environment using the provided requirements.txt fil
 pip install -r requirements.txt
 ```
 ### Data Processing
-There are many open source video datasets, such as [Openvid](https://github.com/NJU-PCALab/OpenVid-1M), [VFHQ](https://liangbinxie.github.io/projects/vfhq/) and [Celebv-text](https://github.com/CelebV-Text/CelebV-Text). The video should be cut into a fixed number of frames (such as 17 or 25...), and the video data should be filtered based on aesthetic (use [DOVER](https://github.com/VQAssessment/DOVER)) and optical flow scores.
+There are many open source video datasets, such as [Openvid](https://github.com/NJU-PCALab/OpenVid-1M), [VFHQ](https://liangbinxie.github.io/projects/vfhq/) and [Celebv-text](https://github.com/CelebV-Text/CelebV-Text). The video should be cut into a fixed number of frames (such as 17 or 25...), and the video data should be filtered based on aesthetic (use [DOVER](https://github.com/VQAssessment/DOVER)) and optical flow scores (refer to OpenSora [data Processing](./tools/scoring/README.md)).
 
 
 You should organize your processed train data into a CSV file, as shown below:
@@ -71,7 +71,7 @@ video_path,text,num_frames,height,width,flow
 ```
 
 ### Train
-You can use the provided ./train_scripts/train_i2v.sh script for training. The configuration file is located at: ./configs/mobilei2v_config/. Before training, change the corresponding model path.
+You can use the provided ./train_scripts/train_i2v.sh script for training. The configuration file is located at: ./configs/mobilei2v_config/. Before training, download the weights for [video-vae](https://huggingface.co/Lightricks/LTX-Video/tree/main/vae) and [qwen2-0.5B](https://huggingface.co/Qwen/Qwen2-0.5B/tree/main) and replace the model path in the configuration file.
 ```
 bash ./train_scripts/train_i2v.sh
 ```
