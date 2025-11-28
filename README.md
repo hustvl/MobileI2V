@@ -98,7 +98,7 @@ We designed the mobile UI and deployed the model, as shown in the video below:
 
 ## ❤️ Acknowledgements
 
-Our MobileI2V codes are mainly built with [SANA](https://github.com/NVlabs/Sana) and [LTX-Video](https://github.com/Lightricks/LTX-Video). Thanks for all these great works.
+Our MobileI2V codes are mainly built with [SANA](https://github.com/NVlabs/Sana) and [LTX-Video](https://github.com/Lightricks/LTX-Video). The data processing workflow is based on [OpenSora](https://github.com/hpcaitech/Open-Sora). Thanks for all these great works.
 
 
 
