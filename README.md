@@ -7,7 +7,7 @@
 <h1>MobileI2V: Fast and High-Resolution Image-to-Video on Mobile Devices</h1>
 
 
-[Shuai Zhang](https://github.com/Shuaizhang7)<sup>\*</sup>, [Bao Tang](https://github.com/Tt-DAY)<sup>\*</sup>, Siyuan Yu<sup>\*</sup>, [Yueting Zhu](https://github.com/lazypomeloo), [Jingfeng Yao](https://github.com/JingfengYao),<br>Ya Zou, Shanglin Yuan, Li Yu, [Wenyu Liu](http://eic.hust.edu.cn/professor/liuwenyu), [Xinggang Wang](https://xwcv.github.io/index.htm)<sup>📧</sup>
+[Shuai Zhang](https://github.com/Shuaizhang7)<sup>\*</sup>, [Bao Tang](https://github.com/Tt-DAY)<sup>\*</sup>, Siyuan Yu<sup>\*</sup>, [Yueting Zhu](https://github.com/lazypomeloo), [Jingfeng Yao](https://github.com/JingfengYao),<br>[Ya Zou](https://github.com/ZouYa99), Shanglin Yuan, Li Yu, [Wenyu Liu](http://eic.hust.edu.cn/professor/liuwenyu), [Xinggang Wang](https://xwcv.github.io/index.htm)<sup>📧</sup>
 
 
 Huazhong University of Science and Technology (HUST) 
@@ -86,7 +86,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/inference_i2v.py \
       --txt_file=asset/test.txt \
       --flow_score=2.0 \
 ```
-To achieve faster VAE decoder speeds, we replaced the LTX-video decoder with the [Turbo-VAED](https://github.com/hustvl/Turbo-VAED) decoder.
+To achieve faster VAE decoder speeds, we replaced the LTX-Video decoder with the [Turbo-VAED](https://github.com/hustvl/Turbo-VAED) decoder.
 
 
 ## 🎯 Mobile Demo
