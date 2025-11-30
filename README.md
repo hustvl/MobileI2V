@@ -78,7 +78,6 @@ bash ./train_scripts/train_i2v.sh
 
 ### Inference
 You can use the provided ./test.sh script for inference. Provide a reference image or video (extract the first frame) to the asset/test.txt file and pass it to the --txt_file parameter.
-
 ```
 CUDA_VISIBLE_DEVICES=0 python scripts/inference_i2v.py \
       --config=./configs/mobilei2v_config/MobileI2V_300M_img512.yaml \
@@ -87,6 +86,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/inference_i2v.py \
       --txt_file=asset/test.txt \
       --flow_score=2.0 \
 ```
+To achieve faster VAE decoder speeds, we replaced the LTX-video decoder with the [Turbo-VAED](https://github.com/hustvl/Turbo-VAED) decoder.
 
 
 ## 🎯 Mobile Demo
