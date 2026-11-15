@@ -1,0 +1,6 @@
+# Install in a separate macOS / Python 3.11 or 3.12 environment.
+torch==2.5.1
+coremltools==8.3.0
+diffusers==0.33.1
+numpy==1.26.4
+safetensors==0.5.3

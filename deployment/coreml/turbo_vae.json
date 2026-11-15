@@ -1,0 +1,11 @@
+{
+  "decoder_block_out_channels": [64, 128, 256, 512],
+  "decoder_layers_per_block": [3, 2, 3, 1, 1],
+  "decoder_is_dw_conv": [false, false, false, true, true],
+  "decoder_dw_kernel_size": 5,
+  "decoder_causal": false,
+  "latent_channels": 128,
+  "out_channels": 3,
+  "patch_size": 4,
+  "patch_size_t": 1
+}
