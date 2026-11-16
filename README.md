@@ -98,6 +98,11 @@ python scripts/evaluate_FVD.py -dir1 path/gts -dir2 path/videos -b 1 -r 32 -n 12
 ### Distillation training
 The training data is consistent with that used for base model training. Please refer to our [distillation code](https://github.com/hustvl/MobileI2V/tree/distillation), which is available in the distillation branch of this repository.
 
+## 📱 On-device Deployment
+
+- **Core ML conversion:** [deployment/coreml](./deployment/coreml) provides the hybrid transformer and Turbo-VAE decoder exporters with numerical validation. On an Apple Silicon Mac, install [the export dependencies](./deployment/coreml/requirements.txt) in a separate Python 3.11/3.12 environment and run `python -m deployment.coreml.export --help` from the repository root.
+- **iOS demo:** Open [MobileI2V.xcodeproj](./deployment/ios/MobileI2V.xcodeproj) in Xcode 16+ (iOS 18+). Add matching `Transformer`, `VAEEncoder`, and `VAEDecoder` Core ML packages to `deployment/ios/MobileI2V/Models/`, then select your own signing team to run on an iPhone.
+
 ## 🎯 Mobile Demo
 We designed the mobile UI and deployed the model, as shown in the video below:
 <div align="center">
